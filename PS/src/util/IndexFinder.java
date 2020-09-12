@@ -3,10 +3,10 @@ package util;
 import java.util.List;
 
 public class IndexFinder {
-    private List<Integer> integers;
+    private final List<Integer> integers;
 
-    private Integer maxIndex;
-    private Integer minIndex;
+    private int maxIndex;
+    private int minIndex;
 
     public IndexFinder(List<Integer> integers) {
         this.integers = integers;
@@ -32,11 +32,15 @@ public class IndexFinder {
         }
     }
 
-    public Integer getMaxIndex() {
+    public int getMaxIndex() {
         return maxIndex;
     }
 
-    public Integer getMinIndex() {
+    public int getMinIndex() {
         return minIndex;
+    }
+
+    public int addIndex() {
+        return maxIndex + minIndex;
     }
 }

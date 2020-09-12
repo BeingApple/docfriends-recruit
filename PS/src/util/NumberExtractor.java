@@ -9,15 +9,11 @@ public class NumberExtractor {
     private static final Pattern pattern = Pattern.compile("[0-9]+");
     private final Matcher matcher;
 
-    private String inputString;
-    private List<Integer> extractedNumbers;
-
     public NumberExtractor(String inputString) {
-        this.inputString = inputString;
-        this.matcher = pattern.matcher(this.inputString);
+        this.matcher = pattern.matcher(inputString);
     }
 
-    private List<Integer> getNumbers() {
+    public List<Integer> getNumbers() {
         List<Integer> integerList = new ArrayList<>();
 
         while (this.matcher.find()) {

@@ -1,0 +1,21 @@
+.gradle
+!gradle/wrapper/gradle-wrapper.jar
+.DS_Store
+logs/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+/out/
+
+### Gradle ###
+.gradle
+/build/
+
+### front-end ###
+frontend/node_modules
+
+### npm build ###
+src/main/resources/dist
